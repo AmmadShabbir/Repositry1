@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int num, number, largest, smallest, count;
+	cout << "How many integers are you want to enter to find the largest and smallest:";
+	cin >> num;
+	cout << "Please enter the first positive integer:";
+	cin >> number;
+	largest = number;
+	smallest = number;
+	count = 0;
+
+
+	while (count < num)
+	{
+		cout << "Enter again the number as input";
+		cin >> number;
+
+		if (largest < number)
+		{
+			largest = number;
+		}
+
+		if (smallest > number)
+		{
+			smallest = number;
+		}
+		count = count + 1;
+	}
+	cout << "The largest number of all inputting number is :" << largest << endl;
+	cout << "The smallest number of all inputting number is:" << smallest;
+
+
+	return 0;
+}
